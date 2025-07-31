@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+}
+
+header, footer {
+    background: #222;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
