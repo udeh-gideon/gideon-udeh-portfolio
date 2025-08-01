@@ -146,6 +146,91 @@ body {
     text-decoration: underline;
 }
 
+/* SKILLS SECTION */
+.skills {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #0f0f0f;
+    margin-bottom: 0.5rem;
+}
+
+.skills-intro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.skills-tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.skills-tags span {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.skills-tags span:hover {
+    background-color: #e63946;
+    color: #fff;
+}
+
+/* SKILL BARS */
+.skill-bars {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.bar {
+    margin-bottom: 1.2rem;
+}
+
+.bar-label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.bar-container {
+    background-color: #ddd;
+    border-radius: 30px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #e63946, #ff6b6b);
+    width: 0;
+    animation: fillBar 1.5s ease forwards;
+}
+
+/* Individual Bar Widths */
+.bar-fill.html {width: 95%; }
+.bar-fill.css {width: 80%; }
+.bar-fill.js {width: 75%; }
+.bar-fill.py {width: 90%; }
+.bar-fill.git {width: 80%; }
+.bar-fill.mysql {width: 60%; }
+
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--width); }
+}
+
 /* For Responsive Display */
 @media (min-width: 768px) {
     .hero-content {
@@ -189,6 +274,16 @@ body {
 
     .about-text {
         padding-left: 2rem;
+    }
+
+    /* For Skill Section */
+    .skills-tags {
+        gap: 0.5rem;
+    }
+
+    .skills-tags span {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 
