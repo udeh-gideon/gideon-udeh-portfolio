@@ -23,7 +23,7 @@ Welcome to my responsive personal portfolio website! Built using just **HTML5** 
 3. Customize content and styles to your taste.
 
 ## 🚀 Live Demo
-[View Portfolio](https://gideon-udeh.github.io)
+[View Portfolio](https://udeh-gideon.github.io/gideon-udeh-portfolio/)
 
 ## 🙌 Acknowledgements
 I want to use this opportunity to thank the staff of the Power Learn Project (PLP) Software Engineering Program for organizing this awesome July 2025 Cohort all expense paid.
