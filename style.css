@@ -203,6 +203,13 @@ body {
     margin-bottom: 0.3rem;
 }
 
+.bar-label img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .bar-container {
     background-color: #ddd;
     border-radius: 30px;

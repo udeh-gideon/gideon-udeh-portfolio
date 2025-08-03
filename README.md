@@ -26,9 +26,9 @@ Welcome to my responsive personal portfolio website! Built using just **HTML5** 
 [View Portfolio](https://udeh-gideon.github.io/gideon-udeh-portfolio/)
 
 ## 🙌 Acknowledgements
-I want to use this opportunity to thank the staff of the Power Learn Project (PLP) Software Engineering Program for organizing this awesome July 2025 Cohort all expense paid.
+I want to use this opportunity to thank the staff of the Power Learn Project (PLP) Software Engineering Program for organizing this awesome July 2025 Cohort and Hackathon all expense paid.
 
-I also want to appreciate my wonderful instructors for making the learning experience a memorable one.
+I also want to appreciate my wonderful instructors for making the learning experience a memorable one. The portfolio is as a result of my few weeks of being part of the program.
 
 I wish to acknowledge my Deskie for his insights and shared knowledge that led to the success of this portfolio.
 
