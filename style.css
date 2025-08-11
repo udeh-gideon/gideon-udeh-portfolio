@@ -685,6 +685,10 @@ footer {
 
 /* For Min-width */
 @media (min-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
