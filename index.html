@@ -4,20 +4,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gideon Udeh Portfolio</title>
+        <meta name="description" content="Portfolio of Gideon Udeh - FullStack Developer, Python-Django Tutor, and Data Science Enthusiast">
+        <meta name="keywords" content="FullStack Developer, Python, Django, Data Science, Machine Learning, PowerBI">
+        <meta name="author" content="Gideon Udeh">
+        <meta property="og:title" content="Portfolio - Gideon Udeh">
+        <meta property="og:description" content="FullStack Developer, Data Scientist & Designer">
+        <meta property="og:type" content="website">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Gideon Udeh | Portfolio</title>
+
+        <!-- Google Fonts -->
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap">
+
+        <!-- AOS Library -->
+         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+        <!-- Font Awesome  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- CSS Style -->
         <link rel="stylesheet" href="style.css"> 
     </head>
     <!-- Body Section -->
      <body>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
+        <!-- Header Section -->
+         <header>
+            <h2>Gideon Udeh</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+         </header>
+
+         <!-- Hero Section -->
+        <section class="hero" id="hero" data-aos="fade-right">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Gideon C. Udeh</h1>
-                    <h2>Hi, I'm a Software Developer</h2>
+                    <h2>Hi, I'm a Software Developer 🤖</h2>
                     <p>A passionate Fullstack Developer and Machine Learning Enthusiast dedicated to building elegant digital solutions, empowering youths, and solving real-world problems through code and creativity.
                     </p>
                     <a href="#about" class="btn">Learn More</a>
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn">Get In Touch</a>
                     
                     <!-- Include social images -->
                     <div class="social-links">
@@ -29,21 +66,24 @@
                 <!-- Include my personal photo -->
                 <div class="hero-image">
                     <img src="./images/Udeh-Gideon--(2).jpg" alt="Gideon Udeh">
+                    <h1 class="hero-name">Gideon C. Udeh</h1>
                 </div>
             </div> 
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="about" id="about">
+        <section class="about" id="about" data-aos="fade-left">
             <div class="about-container">
-                <!-- Include a personal photo -->
+                <!-- Personal photo -->
                 <div class="about-img">
                     <img src="./images/Udeh-Gideon--(1).jpg" alt="Gideon Udeh">
                 </div>
+                <!-- About Text -->
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>Hi, I'm <strong>Gideon Udeh</strong>, a Mechanical Engineering graduate from the University of Nigeria, Nsukka (UNN) with a strong passion for innovation, research, and capacity building. <br>
-                    As the founder of Go_Pro Learning Community (GPLC), I mentor and lead young professionals across Nigeria. My journey in tech spans across web development, machine learning, and data analysis, with hands-on experience from internships in India to real-world projects in Nigeria. <br>
+                    <p>Hi, I'm <strong>Gideon Udeh</strong>, a Mechanical Engineering graduate from the University of Nigeria, Nsukka (UNN) with a strong passion for innovation, research, and capacity building. 
+                    <br><br>
+                    As the founder of Go_Pro Learning Community (GPLC), I mentor and lead young professionals across Nigeria. My journey in tech spans across web development, machine learning, and data analysis, with hands-on experience from internships in India to real-world projects in Nigeria. <br><br>
                      I love working on meaningful projects, collaborating with teams, and building tools that make a positive impact. When I'm not coding or mentoring, you'll find me gardening, reading non-fiction, or singing.
                     </p>
                     <ul>
@@ -56,73 +96,75 @@
             </div>
         </section>
 
-        <!-- SKILLS SECTION -->
-         <section class="skills" id="skills">
-            <h2>My Skillset</h2>
+         <!-- SKILLS SECTION -->
+         <section class="skills" id="skills" data-aos="fade-up">
+            <h2 class="section-title">Experience Levels</h2>
             <p class="skills-intro">Here are some of the tools and technologies I’ve been working with:</p>
 
-            <div class="skill-tags">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>Git & GitHub</span>
-                <span>MySQL</span>
-            </div>
-
-            <div class="skill-bars">
-                <!-- For HTML skill -->
-                <div class="bar">
-                    <div class="bar-label"> <img src="./assets/html5-icon.jpg" alt="HTML5"> HTML5</div>
-                    <div class="bar-container">
-                        <div class="bar-fill html"></div>
+            <!-- For HTML5 Skill -->
+            <div class="skill">
+                <span class="skill-name"><i class="fab fa-html5" aria-hidden="true"></i>  HTML5</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="90">
+                        <span class="skill-percent">90%</span>
                     </div>
                 </div>
-
-                <!-- For CSS skill -->
-                 <div class="bar">
-                    <div class="bar-label"><img src="./assets/css-icon.jpg" alt="CSS3"> CSS</div>
-                    <div class="bar-container">
-                        <div class="bar-fill css"></div>
-                    </div>
-                 </div>
-
-                <!-- For JavaScript skill -->
-                 <div class="bar">
-                    <div class="bar-label"><img src="./assets/javascript-icon.jpg" alt="javascript"> JavaScript</div>
-                    <div class="bar-container">
-                        <div class="bar-fill js"></div>
-                    </div>
-                 </div>
-
-                <!-- For Python skill -->
-                 <div class="bar">
-                    <div class="bar-label"><img src="./assets/python-icon.jpg" alt="python"> Python</div>
-                    <div class="bar-container">
-                        <div class="bar-fill py"></div>
-                    </div>
-                 </div>
-
-                <!-- For Git & GitHub skill -->
-                 <div class="bar">
-                    <div class="bar-label"><img src="./assets/git-icon.png" alt="git"> Git & GitHub</div>
-                    <div class="bar-container">
-                        <div class="bar-fill git"></div>
-                    </div>
-                 </div>
-
-                <!-- For MySQL skill -->
-                 <div class="bar">
-                    <div class="bar-label"><img src="./assets/mysql-logo.png" alt="mysql"> MySQL</div>
-                    <div class="bar-container">
-                        <div class="bar-fill mysql"></div>
-                    </div>
-                 </div>
             </div>
-         </section>
 
-         <!-- PROJECTS SECTION -->
-         <section class="projects" id="projects">
+            <!-- For CSS3 Skill -->
+            <div class="skill">
+                <span class="skill-name"><i class="fab fa-css3-alt" aria-hidden="true"></i>  CSS3</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="85">
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For JavaScript Skill -->
+            <div class="skill">
+                <span class="skill-name"><i class="fab fa-js" aria-hidden="true"></i>  JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="75">
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Python Skill -->
+            <div class="skill">
+                <span class="skill-name"><i class="fab fa-python" aria-hidden="true"></i>  Python</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="80">
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Version control -->
+            <div class="skill">
+                <span class="skill-name"><i class="fab fa-git" aria-hidden="true"></i>  Version Control</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="85">
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Database Management -->
+            <div class="skill">
+                <span class="skill-name"><i class="fa fa-database" aria-hidden="true"></i>  DataBase Management</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-percent="70">
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- PROJECTS SECTION -->
+         <section class="projects" id="projects" data-aos="fade-left">
             <h2>Projects</h2>
             <p class="projects-intro">Here are a few highlights of what I've built and contributed to. </p>
             <!-- Include Project snapshots and GitHub Repo links -->
@@ -169,7 +211,69 @@
             </div>
          </section>
 
-         <!-- CONTACTS SECTION -->
+        <!-- Contact Section -->
+         <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>Get in Touch</h2>
+                <p class="contact-description">
+                    I'd love to hear from you! Whether it's a project, collaboration, or just a friendly hello.
+                </p>
+
+                <div class="contact-wrapper">
+
+                    <!-- Contact Info -->
+                     <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:gideonudeh8@gmail.com">gideonudeh8@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+2349163404775">+234 916 340 4775</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Enugu, Nigeria</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!-- Contact Form -->
+                      <form action="#" class="contact-form" method="POST">
+                        <div class="form-group">
+                            <input class="form-input" type="text" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" class="form-input" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"> Send Message</i>
+                        </button>
+                      </form>
+                </div>
+            </div>
+
+            <!-- Toast Notification -->
+             <div class="toast" id="toast">Message Sent Successfully!</div>
+         </section>
+
+        <!-- CONTACT SECTION
          <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <p class="contact-intro">Let’s work together or just say hello! I’m open to collaborations, freelance gigs, and full-time roles.</p>
@@ -185,37 +289,23 @@
                 <p><strong>Email:</strong> gideonudeh8@gmail.com</p>
                 <p><strong>Location:</strong> Enugu, Nigeria</p>
             </div>
-         </section> 
+         </section> -->
 
-        <!-- Header Section -->
-        <!-- <header>
-            <h1>Gideon Udeh</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#interests">Interests</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header> -->
-        <!-- Main Section -->
-        <main>
-            <section id="about">...</section>
-            <section id="skills">...</section>
-            <section id="education">...</section>
-            <section id="interests">...</section>
-            <section id="projects">...</section>
-            <section id="contact">...</section>
-        </main>
-        <!-- Footer Section -->
-        <footer class="footer">
+        <!-- Footer section -->
+         <footer>
             <p>&copy; 2025 Gideon Udeh. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/gideon-udeh" target="_blank">LinkedIn</a>
-                <a href="https://github.com/udeh-gideon" target="_blank">GitHub</a>
-                <a href="mailto:gideonudeh8@gmail.com">Email</a>
-            </div>
-        </footer>
+         </footer>
+
+        <!-- Scroll to the top button -->
+         <button id="topBtn">
+            <i class="fas fa-arrow-up"></i>
+         </button>
+
+        <!-- AOS Script -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <script>AOS.init({duration: 1000, once: true});</script>
+
+        <!-- Index.js -->
+         <script src="index.js"></script>
      </body>
 </html>
